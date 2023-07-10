@@ -1,0 +1,6 @@
+<h1>All celebrities</h1>
+<ul>
+  <% allCelebs.forEach(celebrity => { %>
+  <li><a href="/celebrities/<%-celebrity._id%>"><%- celebrity.name %></a></li>
+  <% }) %>
+</ul>

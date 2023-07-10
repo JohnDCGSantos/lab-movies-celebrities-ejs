@@ -1,0 +1,9 @@
+<h2>All Movies</h2>
+
+<% foundMovies.forEach(movie => { %>
+  <div class="movies-page">
+    <p>Title: <a href="/movies/<%= movie._id %>"><%= movie.title %></a></p>
+  </div>
+<% }); %>
+
+<a href="/movies/create">Add a New Movie</a>

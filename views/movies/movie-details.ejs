@@ -1,0 +1,16 @@
+<h2>Movie Details</h2>
+
+<div>
+    <p>Title: <%= foundMovie.title %></p>
+    <p>Genre: <%= foundMovie.genre %></p>
+    <p>Plot: <%= foundMovie.plot %></p>
+    Cast: 
+    <ul>
+        <% foundMovie.cast.forEach(actor => { %>
+        <li>Name: <%= actor.name %></li>
+        <li>Occupation: <%= actor.occupation %></li>
+        <li>Catch Phrase: <%= actor.catchPhrase %></li>
+        <br>
+        <% }); %>
+    </ul>
+</div>
